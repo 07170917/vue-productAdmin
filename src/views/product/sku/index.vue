@@ -245,6 +245,9 @@ export default {
       this.page.page = val;
       this.fetchData();
     },
+    editSkuStatus(val,status){
+      val.status=status
+    },
     deleteSku(val) {
       this.$confirm("确认删除该用户吗", "提示", {
         confirmButtonText: "确定",
